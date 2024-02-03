@@ -1,0 +1,46 @@
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js" integrity="sha512-BK/c8SKG4PMGMg8wo/56FdGMkgQFJgFl8rnVdF1wqIZW73Vw6M/Tde9GmwibV8MoBSBJcwurXGg6B9yvd/Fvcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Cálculo Numérico</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <table id="minhaTabela">
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Controles</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="campo1[]"></td>
+                    <td><input type="text" name="campo2[]"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="campo1[]"></td>
+                  <td><input type="text" name="campo2[]"></td>
+              </tr>
+                  <tr>
+                      <td><input type="text" name="campo1[]"></td>
+                      <td><input type="text" name="campo2[]"></td>
+                      <td>
+                          <span class="btn-control btn-add" onclick="adicionarLinha()">+</span>
+                      </td>
+                  </tr>
+            </table>
+            <button onclick="calcular()">Calcular</button>
+
+            <span id="function_result" style="margin:12px;font-weight: bold;font-size: 1rem;"></span>
+        </div>
+        <div class="graph-section">
+            <canvas id="graphCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
